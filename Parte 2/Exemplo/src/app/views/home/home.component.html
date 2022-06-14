@@ -1,0 +1,46 @@
+<header>
+    <div class="container cabecalho">  
+        <a href="#"><img class="logo" src="../assets/img/Logo_eplayers.svg" alt="Logo"> </a>
+        <nav id="menu" class="menu">
+            <a href="#" target="_blank">Inicio</a>
+            <a href="#" target="_blank">Login</a>
+            <a href="#" target="_blank">Campeonato</a>
+            <a href="#" target="_blank">Resultados</a>
+            <a href="#" target="_blank">Noticias</a>
+        </nav>
+    </div>
+  </header>
+
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Clique Aqui
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+  <div class="modal-content">
+  <div class="modal-header">
+  <h5 class="modal-title" id="exampleModalLabel">Iphone de Gratis</h5>
+  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  </div>
+  <div class="modal-body">
+    Mussum Ipsum, cacilds vidis litro abertis. In elementis mé pra quem é amistosis quis leo.Quem manda na minha terra sou euzis!Sapien in monti palavris qui num significa nadis i pareci latim.Copo furadis é disculpa de bebadis, arcu quam euismod magna.
+  </div>
+  <div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Aceitar</button>
+  <button type="button" class="btn btn-primary">Recusar</button>
+  </div>
+  </div>
+  </div>
+  </div>
+
+
+  <form #userForm="ngForm" (ngSubmit)="OnSubmit()">
+    <label for="email">Email: </label>
+    <input type="email" id="email" name="email" [(ngModel)] = "userModel.email">
+ 
+    <label for="senha"> Senha: </label>
+    <input type="password" id="senha" name="senha" [(ngModel)] = "userModel.senha">
+    <button type="submit">Enviar</button>
+  </form>
